@@ -1,0 +1,75 @@
+/* .wrapper {
+
+} */
+
+.header {
+  width: 100vw;
+  height: 100px;
+  background-color: aqua;
+  display: flex;
+}
+
+.surch-box {
+  width: 350px;
+  background-color: chartreuse;
+  display: flex;
+}
+
+.surch-window {
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px 80px 20px 80px;
+  padding: 10px;
+}
+
+.sub-header {
+  width: calc(100vw - 350px);
+
+}
+
+.main {
+  background-color: blueviolet;
+  height: calc(100vh - 100px);
+  display: flex;
+}
+
+.left {
+  width: 350px;
+  overflow: scroll;
+}
+
+.group {
+  margin-left: 10px;
+
+}
+
+.depertment {
+  margin-left: 20px;
+}
+
+.section {
+  margin-left: 30px;
+}
+
+.unit {
+  margin-left: 40px;
+}
+
+.center {
+  width: 700px;
+  background-color: crimson;
+}
+
+.right {
+  width: calc(100vw - 350px - 700px);
+  background-color: white;
+}
+
+/* .user {
+  display: flex;
+} */
+
+a {
+  text-decoration: none;
+  color:black;
+}
