@@ -65,9 +65,10 @@
   background-color: white;
 }
 
-/* .user {
+.user {
   display: flex;
-} */
+  justify-content: space-around;
+}
 
 a {
   text-decoration: none;

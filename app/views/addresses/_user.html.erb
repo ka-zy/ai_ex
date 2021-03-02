@@ -1,0 +1,47 @@
+<div class="user">
+ <%# <% @addresses.each do |user| %> 
+  <div class="name">
+  <% @addresses.each do |user| %>
+   <ul>
+    <li>
+     <%= user.last_name + user.first_name %>
+    </li>
+   </ul>
+  <% end %>
+  </div>
+  <div class="kana" >
+  <% @addresses.each do |user| %>
+   <ul>
+    <li>
+     <%= user.kana %>
+    </li> 
+   </ul>
+  <% end %>
+  </div> 
+  <div class="num">
+  <% @addresses.each do |user| %>
+   <ul>
+    <li>
+     <%= user.num %>
+    </li>
+   </ul>
+  <% end %>
+  </div>
+  <div class="position">
+  <% @addresses.each do |user| %>
+   <ul>
+    <li>
+     <%= user.position %>
+    </li>
+   </ul>
+  <% end %>
+  </div>
+  <div class="extension">
+   <ul>
+    <li>
+     ＜内線番号＞
+    </li>
+   </ul>
+  </div>
+ <%# <% end %> 
+</div>
