@@ -6,6 +6,7 @@ class AddressesController < ApplicationController
     @dep = @addresses.select(:company, :group, :depertment).distinct
     @sec = @addresses.select(:company, :group, :depertment, :section).distinct
     @unit = @addresses.select(:company, :group, :depertment, :section, :unit).distinct
+    # @users = 
   end
 
   def search
@@ -13,7 +14,11 @@ class AddressesController < ApplicationController
     @addresses = Address.search(params[:keyword])
  
   end
+
+  # def show
+  #   @addresses = Address.all(params[:id])
  
+  # end
 
   # def new
   #   @address = Address.new

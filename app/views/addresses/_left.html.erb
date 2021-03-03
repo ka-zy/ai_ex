@@ -1,0 +1,64 @@
+<div class="left">
+  ＜階層ツリー＞
+  <% @com.each do |com| %>
+   <div class="company">
+    <ul>
+     <li>
+      <% if com.company.present? %>
+       <%= link_to com.company, addresses_path %>
+      <% end %>
+      <% @gro.each do |gro| %>
+       <div class="group">
+        <ul>
+          <% if com.company == gro.company %>
+         <li>
+           <%= link_to gro.group %>
+           <% @dep.each do |dep| %>
+            <div class="depertment">
+             <ul>
+              <% if gro.group == dep.group %>
+               <li>
+                <% if dep.depertment.present? %>
+                 <%= link_to dep.depertment %>
+                <% end %>
+                <% @sec.each do |sec| %>
+                 <div class="section">
+                  <ul>
+                   <% if dep.depertment == sec.depertment %>
+                    <li>
+                     <% if sec.section.present? %>
+                      <%= link_to sec.section %>
+                     <% end %>
+                     <% @unit.each do |unit| %>
+                      <div class="unit">
+                       <ul>
+                        <% if sec.section == unit.section %>
+                         <li>
+                          <% if unit.unit.present? %>
+                           <%= link_to unit.unit %>
+                          <% end %>
+                         </li>
+                        <% end %>
+                       </ul>
+                      </div>
+                     <% end %>
+                    </li>
+                   <% end %>
+                  </ul>
+                 </div>
+                <% end %>
+               </li>
+              <% end %> 
+             </ul>
+            </div>
+           <% end %> 
+         </li>
+          <% end %> 
+        </ul>
+       </div>
+      <% end %> 
+     </li>
+    </ul>
+   </div>
+  <% end %>
+</div>
